@@ -1,7 +1,7 @@
 # WSL (Virtual Machine)
 
 ## Install WSL without a Distro
-```
+```sh
 wsl --install --no-distribution
 ```
 
