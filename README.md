@@ -11,7 +11,7 @@ wsl --install -d Debian
 ```
 
 ## Create a Username and Password
-After restarting your PC, a Terminal window will prompt you to create a username and password.
+After installing Debian, the Terminal window will prompt you to create a username and password. Create one named `bos` or any username that you prefer.
 
 ## Update Debian
 Inside Debian, run:
