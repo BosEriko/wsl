@@ -18,3 +18,19 @@ Inside Ubuntu, run:
 ```sh
 sudo apt update && sudo apt full-upgrade
 ```
+
+## Memory Issue
+Sometimes WSL2 will take too much memory. To fix run the commands below on PowerShell.
+```sh
+wsl --shutdown
+notepad "$env:USERPROFILE/.wslconfig"
+```
+Then add the following configuration to `.wslconfig`.
+```
+[wsl2]
+memory=8GB
+swap=0
+
+[experimental]
+autoMemoryReclaim=gradual
+```
